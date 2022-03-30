@@ -6,22 +6,22 @@ body {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     border-style: solid;
     border-color: wheat;
 }
 
-.header-left,
-.header-right{
-    padding-bottom: 50px;
-}
-
-.header-left{
+.header-container{
     display: flex;
     flex-direction: column;
     border-style: solid;
     border-color: wheat;
-    width: 400px;
-    justify-content: space-between;
+}
+
+.header-logo-links{
+    display: flex;
+    border-style: solid;
+    border-color: wheat;
 }
 
 .header-logo{
@@ -31,21 +31,15 @@ body {
     border-color: wheat;
 }
 
-.hero-body-left{
-    border-style: solid;
-    border-color: wheat;
-}
-
-.header-right{
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color: wheat;
-    width: 400px;
-    align-items: flex-end;
-}
-
 .header-links{
+    display: flex;
+    border-style: solid;
+    border-color: wheat;
+    margin-left: auto;
+}
+
+.header-hero-img{
+    display: flex;
     border-style: solid;
     border-color: wheat;
 }
@@ -56,9 +50,19 @@ body {
     font-weight: bolder;
 }
 
-.title,
+.hero{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: wheat;
+}
+
+.hero-title{
+
+}
+
 .title-body{
-    margin-bottom: 8px;
+    color: #E5E7EB;
 }
 
 button {
@@ -76,6 +80,7 @@ ul {
     border-color: wheat;
     margin-top: auto;
     gap: 18px;
+    flex: 1;
 }
 
 li{
@@ -91,5 +96,5 @@ a{
 }
 
 img {
-    width:400px;
+    max-width: 300px;
 }
