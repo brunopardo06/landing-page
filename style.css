@@ -1,100 +1,242 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Roboto;
+}
+
+.header,
+.footer{
+    background-color: #000000;
 }
 
 .header{
-    background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border-style: solid;
-    border-color: wheat;
+    padding: 10px 20px 80px 20px;
 }
 
 .header-container{
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-color: wheat;
+    max-width: 1000px;
 }
 
 .header-logo-links{
     display: flex;
-    border-style: solid;
-    border-color: wheat;
 }
 
 .header-logo{
     font-size: 24px;
+    font-weight: bold;
     color: #F9FAF8;
-    border-style: solid;
-    border-color: wheat;
+    flex:1;
 }
 
 .header-links{
     display: flex;
-    border-style: solid;
-    border-color: wheat;
-    margin-left: auto;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .header-hero-img{
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
-    border-style: solid;
-    border-color: wheat;
-}
-
-.title {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: bolder;
 }
 
 .hero{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    border-style: solid;
-    border-color: wheat;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .hero-title{
-
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
 }
 
-.title-body{
+.hero-body{
     color: #E5E7EB;
+    font-size: 18px;
 }
 
-button {
-    background-color: #3882f6;
+.hero button {
+    background-color: #56308C;
     color: #f9faf8;
     border: none;
     border-radius: 8px;
-    padding: 4px 16px;
+    padding: 6px 20px;
+    align-self: flex-start;
 }
 
-ul {
+.header-links ul {
     display: flex;
     list-style-type: none;
-    border-style: solid;
-    border-color: wheat;
     margin-top: auto;
-    gap: 18px;
     flex: 1;
 }
 
-li{
-    border-style: solid;
-    border-color: rgb(172, 52, 15);
+.header-links li{
     flex: 1;
 }
 
-a{
+.header-links a{
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 0;
 }
 
-img {
-    max-width: 300px;
+.hero-image img {
+    max-width: 430px;
+    border-radius: 8px;
+}
+
+.top-body{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+}
+
+.top-body-title{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding-bottom: 25px;
+}
+
+.top-body-content{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.top-body-txt-imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 150px;
+}
+
+.top-body-txt-imgs img{
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#000000 ;
+}
+
+.top-body-txt-imgs .text{
+    text-align: center;
+}
+
+.middle-body{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 25px;;
+}
+
+.middle-body-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.quote{
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.quote-ref{
+    margin-top: 0;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-body{
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    display: flex;
+    background-color:#0000006e ;
+    max-width: 800px;
+    border-radius: 8px;
+    color:#f9faf8;
+    padding: 40px 15px;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 5;
+}
+
+.modal-header{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.close-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 80px;
+    flex: 1;
+}
+
+.close-button .red-pill{
+    background-color: #9c0707;
+    color: #F9FAF8;
+    border-radius: 8px;
+    border-color: #380101;
+    border-style: solid;
+    padding: 6px 20px;
+}
+
+.close-button .blue-pill{
+    background-color: #08179e;
+    color: #F9FAF8;
+    border-radius: 8px;
+    border-color: #040147;
+    border-style: solid;
+    padding: 6px 20px;
+}
+
+.footer{
+    display: flex;
+    color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0;
 }
